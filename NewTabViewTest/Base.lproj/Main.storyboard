@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kfl-46-SaU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--項目-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="NewTabViewTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -37,16 +39,103 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="項目" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="546" y="-740"/>
         </scene>
-        <!--Second-->
+        <!--關於-->
+        <scene sceneID="G8t-qq-uKv">
+            <objects>
+                <viewController id="yde-7C-vKt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ugF-cW-wau"/>
+                        <viewControllerLayoutGuide type="bottom" id="K5v-pl-e0q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jq7-6f-e8H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLj-fy-Det">
+                                <frame key="frameInset" minX="28" minY="149" width="331" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">施吉生技應材公司(SG)提供全世界第一個針對食品安全進行快速檢測的手機平台，直覺操作並紀錄從不同商店所採買的常用食材，製作專屬家人的食安地圖。
+
+鞏固健康，從拒絕添加物下手！</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="service@sghlds.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-KC-WND">
+                                <frame key="frameInset" minX="84" minY="431" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+886-3-5750911" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuT-3z-oR4">
+                                <frame key="frameInset" minX="84" minY="473" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ic_action_web_site" translatesAutoresizingMaskIntoConstraints="NO" id="YHs-aU-cXF">
+                                <frame key="frameInset" minX="28" minY="511" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ic_action_email" translatesAutoresizingMaskIntoConstraints="NO" id="wfE-c0-6GA">
+                                <frame key="frameInset" minX="28" minY="422" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ic_action_call" translatesAutoresizingMaskIntoConstraints="NO" id="diC-ME-iOi">
+                                <frame key="frameInset" minX="28" minY="469" width="51" height="34"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="http://www.sghlds.com/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Le-DU-Oge">
+                                <frame key="frameInset" minX="84" minY="511" width="275" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="SGLogo2015" translatesAutoresizingMaskIntoConstraints="NO" id="p0K-Fl-LAe">
+                                <frame key="frameInset" minX="28" minY="85" width="194" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="關於" image="ic_logo" id="3HI-fK-5wG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJM-n7-Y9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="1097.9010494752624"/>
+        </scene>
+        <!--食安-->
+        <scene sceneID="yoZ-DM-kLK">
+            <objects>
+                <viewController id="v8f-2t-p74" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZuH-Kh-Cvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="kUS-F2-Okq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j0a-QL-Z99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="食安" image="ic_action_help" id="IjA-h1-DLy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIA-XB-ypB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="752"/>
+        </scene>
+        <!--紀錄-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="NewTabViewTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -75,11 +164,81 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="紀錄" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="942" y="3"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="iRn-cB-hFm">
+            <objects>
+                <viewController id="Kfl-46-SaU" customClass="InitialViewController" customModule="NewTabViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eqb-Ii-hKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="coj-4c-pJi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="U9H-6r-14A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytr-96-8x6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="422" id="Scg-QK-LVN"/>
+                                </constraints>
+                                <string key="text">一. 本平台檢測方式係由使用者自行採取樣後進行測試, 其採樣, 保存及操作等過程之情形, 非本平台所能確認. 故所得檢測結果僅供參考, 無法做為判定合法與否與產品合格之結果證明.
+ 二. 使用者若以複製, 影印, 轉載或其他方式使用檢驗報告作為宣傳, 推銷或營利等商業使用, 本公司不負任何法律責任. 如有損害他人權益, 應自行負相關責任. 
+ 三. 檢驗結果僅供參考, 若發現疑似添加, 建議送樣至合格檢驗所再次確認.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMS-lU-1rP">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="同意"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="x0p-Ah-ZHw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="即時測 免責宣告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3T-kv-DtY">
+                                <frame key="frameInset" minX="64" minY="66" width="248" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t44-45-R8Q">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="不同意">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="disAgreeAction:" destination="Kfl-46-SaU" eventType="touchUpInside" id="ole-dp-qCb"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qnn-lT-SgW">
+                                <frame key="frameInset" minX="29" minY="52" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZMS-lU-1rP" firstAttribute="centerY" secondItem="t44-45-R8Q" secondAttribute="centerY" constant="-0.5" id="5qV-62-Rfs"/>
+                            <constraint firstAttribute="trailing" secondItem="ytr-96-8x6" secondAttribute="trailing" constant="10" id="8M7-2l-Khe"/>
+                            <constraint firstItem="ytr-96-8x6" firstAttribute="leading" secondItem="U9H-6r-14A" secondAttribute="leading" constant="10" id="B9H-4h-Bo8"/>
+                            <constraint firstItem="coj-4c-pJi" firstAttribute="top" secondItem="t44-45-R8Q" secondAttribute="bottom" constant="54" id="Dc6-pX-Uxf"/>
+                            <constraint firstItem="t44-45-R8Q" firstAttribute="top" secondItem="ytr-96-8x6" secondAttribute="bottom" constant="44" id="Dk5-Yg-6Uv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t44-45-R8Q" secondAttribute="trailing" constant="47" id="OJk-Ki-hxf"/>
+                            <constraint firstItem="ytr-96-8x6" firstAttribute="top" secondItem="eqb-Ii-hKG" secondAttribute="bottom" constant="75" id="bQu-gg-Up8"/>
+                            <constraint firstItem="ZMS-lU-1rP" firstAttribute="bottom" secondItem="t44-45-R8Q" secondAttribute="bottom" constant="-1" id="g4k-th-IN1"/>
+                            <constraint firstItem="t44-45-R8Q" firstAttribute="width" secondItem="ZMS-lU-1rP" secondAttribute="width" id="w1g-aR-W2W"/>
+                            <constraint firstItem="t44-45-R8Q" firstAttribute="leading" secondItem="ZMS-lU-1rP" secondAttribute="trailing" constant="55" id="xoP-ef-Jh1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTk-Er-fdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1412" y="38"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -94,15 +253,23 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="v8f-2t-p74" kind="relationship" relationship="viewControllers" id="mw9-eb-xa1"/>
+                        <segue destination="yde-7C-vKt" kind="relationship" relationship="viewControllers" id="gUh-3h-nfC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-588" y="38"/>
         </scene>
     </scenes>
     <resources>
+        <image name="SGLogo2015" width="184" height="63"/>
         <image name="first" width="30" height="30"/>
+        <image name="ic_action_call" width="48" height="48"/>
+        <image name="ic_action_email" width="48" height="48"/>
+        <image name="ic_action_help" width="48" height="48"/>
+        <image name="ic_action_web_site" width="48" height="48"/>
+        <image name="ic_logo" width="48" height="48"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
